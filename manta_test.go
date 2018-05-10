@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/dotabuff/manta/dota"
+	"github.com/dcbdan/manta/dota"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -66,7 +66,7 @@ type testScenario struct {
 var testScenarios = map[int64]testScenario{
 	6682694: {
 		matchId:               "6682694",
-		replayUrl:             "https://s3-us-west-2.amazonaws.com/manta.dotabuff/6682694.dem",
+		replayUrl:             "https://s3-us-west-2.amazonaws.com/manta.dcbdan/6682694.dem",
 		expectGameBuild:       1083,
 		expectEntityEvents:    3586579,
 		expectUnitOrderEvents: 67817,
@@ -74,7 +74,7 @@ var testScenarios = map[int64]testScenario{
 
 	2369359192: {
 		matchId:                "2369359192",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/2369359192.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/2369359192.dem",
 		expectGameBuild:        1449,
 		expectEntityEvents:     2434738,
 		expectCombatLogDamage:  0,
@@ -86,7 +86,7 @@ var testScenarios = map[int64]testScenario{
 
 	2246960647: {
 		matchId:                "2246960647",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/2246960647.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/2246960647.dem",
 		expectGameBuild:        1339,
 		expectEntityEvents:     4455033,
 		expectCombatLogDamage:  0,
@@ -98,7 +98,7 @@ var testScenarios = map[int64]testScenario{
 
 	2159568145: {
 		matchId:                "2159568145",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/2159568145.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/2159568145.dem",
 		expectGameBuild:        1295,
 		expectEntityEvents:     1831423,
 		expectCombatLogDamage:  0,
@@ -110,7 +110,7 @@ var testScenarios = map[int64]testScenario{
 
 	2109130988: {
 		matchId:                "2109130988",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/2109130988.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/2109130988.dem",
 		expectGameBuild:        1253,
 		expectEntityEvents:     1072803,
 		expectCombatLogDamage:  0,
@@ -122,7 +122,7 @@ var testScenarios = map[int64]testScenario{
 
 	1855408730: {
 		matchId:                "1855408730",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1855408730.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1855408730.dem",
 		expectGameBuild:        1106,
 		expectEntityEvents:     1397062,
 		expectCombatLogDamage:  0,
@@ -133,7 +133,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1855345768: {
 		matchId:                "1855345768",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1855345768.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1855345768.dem",
 		expectGameBuild:        1104,
 		expectEntityEvents:     1567910,
 		expectCombatLogDamage:  0,
@@ -146,7 +146,7 @@ var testScenarios = map[int64]testScenario{
 
 	1855304265: {
 		matchId:                "1855304265",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1855304265.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1855304265.dem",
 		expectGameBuild:        1101,
 		expectEntityEvents:     2477532,
 		expectCombatLogDamage:  0,
@@ -158,7 +158,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1788648401: {
 		matchId:                "1788648401",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1788648401.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1788648401.dem",
 		expectGameBuild:        1036,
 		expectCombatLogDamage:  0,
 		expectCombatLogHealing: 0,
@@ -169,7 +169,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1786687320: {
 		matchId:                "1786687320",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1786687320.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1786687320.dem",
 		expectGameBuild:        1033,
 		expectCombatLogDamage:  0,
 		expectCombatLogHealing: 0,
@@ -179,7 +179,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1785937100: {
 		matchId:                "1785937100",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1785937100.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1785937100.dem",
 		expectGameBuild:        1033,
 		expectEntityEvents:     1965109,
 		expectCombatLogDamage:  955729,
@@ -193,7 +193,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1785899023: {
 		matchId:                "1785899023",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1785899023.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1785899023.dem",
 		expectGameBuild:        1033,
 		expectEntityEvents:     2419045,
 		expectCombatLogDamage:  1803248,
@@ -207,7 +207,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1785874713: {
 		matchId:                "1785874713",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1785874713.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1785874713.dem",
 		expectGameBuild:        1033,
 		expectEntityEvents:     1381012,
 		expectCombatLogDamage:  513912,
@@ -221,7 +221,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1781640270: {
 		matchId:                "1781640270",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1781640270.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1781640270.dem",
 		expectGameBuild:        1027,
 		expectEntityEvents:     1057562,
 		expectCombatLogDamage:  345422,
@@ -234,7 +234,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1764592109: {
 		matchId:                "1764592109",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1764592109.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1764592109.dem",
 		expectGameBuild:        1017,
 		expectEntityEvents:     1827933,
 		expectCombatLogDamage:  1008784,
@@ -248,7 +248,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1763193771: {
 		matchId:                "1763193771",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1763193771.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1763193771.dem",
 		expectGameBuild:        1016,
 		expectEntityEvents:     1203640,
 		expectCombatLogDamage:  623594,
@@ -262,7 +262,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1763177231: {
 		matchId:                "1763177231",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1763177231.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1763177231.dem",
 		expectGameBuild:        1016,
 		expectEntityEvents:     1221874,
 		expectCombatLogDamage:  479350,
@@ -276,7 +276,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1734886116: {
 		matchId:                "1734886116",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1734886116.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1734886116.dem",
 		expectGameBuild:        1003,
 		expectEntityEvents:     2049211,
 		expectCombatLogDamage:  1048805,
@@ -289,7 +289,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1731962898: {
 		matchId:                "1731962898",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1731962898.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1731962898.dem",
 		expectGameBuild:        1003,
 		expectEntityEvents:     1183267,
 		expectCombatLogDamage:  415560,
@@ -303,7 +303,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1716444111: {
 		matchId:                "1716444111",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1716444111.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1716444111.dem",
 		expectGameBuild:        995,
 		expectEntityEvents:     2854511,
 		expectCombatLogDamage:  1398735,
@@ -317,7 +317,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1712853372: {
 		matchId:                "1712853372",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1712853372.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1712853372.dem",
 		expectGameBuild:        991,
 		expectEntityEvents:     1708696,
 		expectCombatLogDamage:  671297,
@@ -331,7 +331,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1648457986: {
 		matchId:                "1648457986",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1648457986.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1648457986.dem",
 		expectGameBuild:        962,
 		expectEntityEvents:     742252,
 		expectCombatLogDamage:  224773,
@@ -345,7 +345,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1605340040: {
 		matchId:                "1605340040",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1605340040.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1605340040.dem",
 		expectGameBuild:        955,
 		expectEntityEvents:     1283574,
 		expectCombatLogDamage:  522367,
@@ -361,7 +361,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1582611189: {
 		matchId:                "1582611189",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1582611189.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1582611189.dem",
 		expectGameBuild:        944,
 		expectEntityEvents:     1427025,
 		expectCombatLogDamage:  599388,
@@ -375,7 +375,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1560315800: {
 		matchId:                "1560315800",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1560315800.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1560315800.dem",
 		expectGameBuild:        928,
 		expectEntityEvents:     2781076,
 		expectCombatLogDamage:  1332418,
@@ -391,7 +391,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1560294294: {
 		matchId:                "1560294294",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1560294294.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1560294294.dem",
 		expectGameBuild:        928,
 		expectEntityEvents:     1611898,
 		expectCombatLogDamage:  768154,
@@ -405,7 +405,7 @@ var testScenarios = map[int64]testScenario{
 	},
 	1560289528: {
 		matchId:                "1560289528",
-		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1560289528.dem",
+		replayUrl:              "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1560289528.dem",
 		expectGameBuild:        928,
 		expectEntityEvents:     2270022,
 		expectCombatLogDamage:  1180993,

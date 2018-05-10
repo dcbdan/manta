@@ -3,7 +3,7 @@ package manta
 import (
 	"testing"
 
-	"github.com/dotabuff/manta/dota"
+	"github.com/dcbdan/manta/dota"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 )

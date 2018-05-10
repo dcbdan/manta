@@ -3,14 +3,14 @@ package manta
 import (
 	"testing"
 
-	"github.com/dotabuff/manta/dota"
+	"github.com/dcbdan/manta/dota"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestParseCDemoSaveGames(t *testing.T) {
 	assert := assert.New(t)
 
-	buf := mustGetReplayData("1560315800", "https://s3-us-west-2.amazonaws.com/manta.dotabuff/1560315800.dem")
+	buf := mustGetReplayData("1560315800", "https://s3-us-west-2.amazonaws.com/manta.dcbdan/1560315800.dem")
 	parser, err := NewParser(buf)
 	assert.NoError(err)
 

@@ -1,4 +1,4 @@
-package: github.com/dotabuff/manta
+package: github.com/dcbdan/manta
 import:
 - package: github.com/davecgh/go-spew
   subpackages:

@@ -44,7 +44,7 @@ func TestStreamingReaderUnexpectedEOF(t *testing.T) {
 	assert := assert.New(t)
 
 	// get data
-	data := mustGetReplayData("2159568145", "https://s3-us-west-2.amazonaws.com/manta.dotabuff/2159568145.dem")
+	data := mustGetReplayData("2159568145", "https://s3-us-west-2.amazonaws.com/manta.dcbdan/2159568145.dem")
 
 	// cut the data at a random point
 	reader := bytes.NewReader(data[:6666])

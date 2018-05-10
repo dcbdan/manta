@@ -7,7 +7,7 @@ bench:
 	go test -run=XXX -bench=BenchmarkMatch -benchtime=1m -v
 
 cover:
-	go test -cover -coverpkg github.com/dotabuff/manta,github.com/dotabuff/manta/vbkv -coverprofile /tmp/manta.cov -v
+	go test -cover -coverpkg github.com/dcbdan/manta,github.com/dcbdan/manta/vbkv -coverprofile /tmp/manta.cov -v
 	go tool cover -html=/tmp/manta.cov
 
 cpuprofile:
@@ -34,4 +34,4 @@ generate:
 	go run gen/callbacks.go
 
 sync-replays:
-	s3cmd --region=us-west-2 sync ./replays/*.dem s3://manta.dotabuff/
+	s3cmd --region=us-west-2 sync ./replays/*.dem s3://manta.dcbdan/

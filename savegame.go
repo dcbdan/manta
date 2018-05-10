@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/dotabuff/manta/dota"
-	"github.com/dotabuff/manta/vbkv"
+	"github.com/dcbdan/manta/dota"
+	"github.com/dcbdan/manta/vbkv"
 )
 
 func ParseCDemoSaveGame(s *dota.CDemoSaveGame) (save *SaveGame, err error) {
